@@ -1,0 +1,76 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <style>
+        
+        button {
+            height:30px;
+            width: 30px;
+            margin: 5px;
+        }
+
+        button:active, .active {
+            background-color: red;
+        }
+        
+        </style>
+        <div>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+        <div>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+        <div>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+        <div>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+        <div>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+
+            const clickor = document.querySelectorAll('button');
+            console.log(clickor);
+
+            const classAdder = $('button').on("click", function() {
+                if ( $(this).hasClass('active')) {
+                    alert("sorry you already voted!"); 
+                } else {
+                    $(this).addClass('active');
+                }
+                
+                
+
+            })
+
+            
+        
+        
+        </script>
+
+    </body>
+</html>
